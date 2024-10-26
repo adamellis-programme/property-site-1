@@ -689,10 +689,13 @@ nav {
     margin-top: 0rem;
     padding: 0.7rem;
   }
-  .home-section-p,
+  .home-section-p {
+    margin-top: 0.6rem;
+    line-height: 0.99;
+  }
   .home-section-h3 {
     margin-top: 0rem;
-    /* line-height: 1; */
+    line-height: 1;
   }
 }
 
