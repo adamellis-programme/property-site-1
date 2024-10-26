@@ -46,12 +46,19 @@ const LikesBar = ({ property, loggedInUser }) => {
     const user = await fetchUser('users', userID)
     const reactions = user?.data?.likedProperties
 
+    console.log(user)
+    if (!user) {
+      console.log('must be logged in to like this property')
+      return
+    }
+
     // Update emojis state immediately for DOM change
     const updatedEmojis = { ...emojis }
     updatedEmojis[key].count += 1
     setEmojis(updatedEmojis)
     setIsLiked(true)
 
+    // can we click emoji when logged out
     if (!reactions.includes(propertyID)) {
       reactions.push(propertyID)
     }

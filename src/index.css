@@ -1679,7 +1679,7 @@ select {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
-  height: calc(100vh - 110px);
+  min-height: calc(100vh - 110px);
 }
 
 .access-page-grid > div {
