@@ -44,7 +44,7 @@ const LikesBar = ({ property, loggedInUser }) => {
   const handleEmojiClick = async (key) => {
     const userID = loggedInUser.uid
     const user = await fetchUser('users', userID)
-    const reactions = user.data.likedProperties
+    const reactions = user?.data?.likedProperties
 
     // Update emojis state immediately for DOM change
     const updatedEmojis = { ...emojis }
