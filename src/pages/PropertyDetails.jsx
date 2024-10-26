@@ -82,7 +82,7 @@ const PropertyDetails = () => {
         />
         {/* // manually place the ? */}
 
-        {loggedInUser.uid === property.propertyOwner && (
+        {loggedInUser && loggedInUser?.uid === property.propertyOwner && (
           <Link
             className="details-page-updte-btn"
             to={`/update?${new URLSearchParams({ id })}`}
