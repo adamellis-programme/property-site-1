@@ -23,7 +23,7 @@ const LikesBar = ({ property, loggedInUser }) => {
 
   useEffect(() => {
     const getDta = async () => {
-      const user = await fetchUser('users', loggedInUser.uid)
+      const user = await fetchUser('users', loggedInUser?.uid)
       const userLikedProperties = user.data.likedProperties
 
       if (user && userLikedProperties.includes(propertyID)) {
