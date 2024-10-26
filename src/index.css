@@ -684,6 +684,16 @@ nav {
   .home-top-grid-item {
     display: none;
   }
+
+  .home-search-section {
+    margin-top: 0rem;
+    padding: 1rem;
+  }
+  .home-section-p,
+  .home-section-h3 {
+    margin-top: 0rem;
+    /* line-height: 1; */
+  }
 }
 
 @media screen and (max-width: 700px) {
